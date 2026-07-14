@@ -1,0 +1,11 @@
+{
+    "target": "expenses",
+    "drop_columns": ["premium"],
+    "numeric_features": ["age", "bmi", "children"],
+    "categorical_features": ["gender", "region"],
+    "boolean_features": ["discount_eligibility"],
+    "test_size": 0.2,
+    "random_state": 42,
+    "output_dir": "preprocessing_outputs",
+    "data_file": "snapshot_medical_insurance_20260708_123924.csv"
+}

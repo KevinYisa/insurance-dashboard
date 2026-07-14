@@ -1,0 +1,51 @@
+{
+  "numeric_features": {
+    "columns": [
+      "age",
+      "bmi",
+      "children",
+      "obesity_age_score",
+      "dependency_load",
+      "lifestyle_penalty"
+    ],
+    "means": [
+      39.31908432609203,
+      28.398177995795375,
+      1.1917776220509226,
+      11.223437981779957,
+      0.9529595888811025,
+      0.7338005138986219
+    ],
+    "stds": [
+      13.853355942650072,
+      6.778035651620838,
+      1.2975414349281242,
+      4.977090129193882,
+      1.1359483073103755,
+      0.4457346333371109
+    ]
+  },
+  "categorical_features": {
+    "columns": [
+      "gender",
+      "region"
+    ],
+    "categories": [
+      [
+        "female",
+        "male"
+      ],
+      [
+        "northeast",
+        "northwest",
+        "southeast",
+        "southwest"
+      ]
+    ]
+  },
+  "boolean_features": {
+    "columns": [
+      "discount_eligibility"
+    ]
+  }
+}

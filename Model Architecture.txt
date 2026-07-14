@@ -1,0 +1,36 @@
+Neon PostgreSQL
+        │
+        ▼
+SQLAlchemy (Python data fetching)
+        │
+        ▼
+Data Validation
+        │
+        ▼
+EDA (Exploratory Data Analysis)
+        │
+        ▼
+Preprocessing Pipeline (Python)
+   └─ Feature Engineering (3 domain‑driven features)
+   └─ Saves preprocessing_params.json for Go consumption
+        │
+        ▼
+Train Multiple Algorithms (Python)
+        │
+        ▼
+Model Comparison
+        │
+        ▼
+Hyperparameter Tuning (optional)
+        │
+        ▼
+Evaluation (MAE, RMSE, R², ROC‑AUC where applicable)
+        │
+        ▼
+Save Best Model + Export Coefficients/Weights to JSON
+        │
+        ▼
+Go Backend (pure math inference, loads JSON params)
+        │
+        ▼
+React Dashboard (Netlify)

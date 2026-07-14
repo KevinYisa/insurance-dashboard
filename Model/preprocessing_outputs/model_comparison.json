@@ -1,0 +1,44 @@
+[
+  {
+    "model": "LinearRegression",
+    "train_rmse": 11576.329987315621,
+    "test_rmse": 11545.098878091587,
+    "train_mae": 8503.520773666498,
+    "test_mae": 8353.974099614714,
+    "train_r2": 0.21181182340449012,
+    "test_r2": 0.18290297851186388,
+    "params": {}
+  },
+  {
+    "model": "RandomForest",
+    "train_rmse": 9550.909607820186,
+    "test_rmse": 11651.85520276691,
+    "train_mae": 7068.796568885536,
+    "test_mae": 8425.004750357526,
+    "train_r2": 0.4634902862600212,
+    "test_r2": 0.1677218907675796,
+    "params": {
+      "n_estimators": 300,
+      "min_samples_split": 10,
+      "min_samples_leaf": 1,
+      "max_features": "log2",
+      "max_depth": 10
+    }
+  },
+  {
+    "model": "XGBoost",
+    "train_rmse": 10551.064880786927,
+    "test_rmse": 11636.922268154203,
+    "train_mae": 7801.772100264066,
+    "test_mae": 8451.13691400779,
+    "train_r2": 0.3452421603877951,
+    "test_r2": 0.16985380715741982,
+    "params": {
+      "subsample": 0.6,
+      "n_estimators": 300,
+      "max_depth": 5,
+      "learning_rate": 0.01,
+      "colsample_bytree": 1.0
+    }
+  }
+]
