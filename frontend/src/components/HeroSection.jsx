@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import SectionBackground from '../components/SectionBackground';
 import TypingText from '../components/TypingText';
 import GlassHeading from '../components/GlassHeading';
-import heroBg from '../assets/sections/hero-bg.jpg';
+import heroBg from '../assets/sections/Hero-bg.jpg';
 
 const HeroSection = () => {
   return (
