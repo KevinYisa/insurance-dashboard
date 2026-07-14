@@ -292,7 +292,7 @@ func main() {
 
 	r := chi.NewRouter()
 	r.Use(cors.Handler(cors.Options{
-		AllowedOrigins:   []string{"http://localhost:3000", "http://localhost:5173", "https://your-netlify-app.netlify.app"},
+		AllowedOrigins:   []string{"http://localhost:3000", "http://localhost:5173", "https://your-netlify-app.netlify.app", "https://health-insurance-mlm.netlify.app"},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
 		ExposedHeaders:   []string{"Link"},
