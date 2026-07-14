@@ -59,16 +59,41 @@ html {
 
 /* ===== Glassmorphism Box (Enhanced) ===== */
 .glass-box {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 24px;
-  padding: 28px;
-  box-shadow: 
-    0 20px 60px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(15, 23, 42, 0.45);
+    border: 1px solid rgba(255,255,255,0.12);
+
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+
+    border-radius: 24px;
+    padding: 28px;
+
+    box-shadow:
+        0 12px 40px rgba(0,0,0,0.45),
+        inset 0 1px rgba(255,255,255,0.10);
+
+    transition: all .3s ease;
+}
+
+.glass-box:hover{
+    transform: translateY(-4px);
+    background: rgba(15,23,42,.55);
+}
+.glass-box::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.08),
+        rgba(255,255,255,.02)
+    );
+
+    pointer-events:none;
 }
 
 .glass-box:hover {

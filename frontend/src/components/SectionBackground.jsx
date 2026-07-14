@@ -12,7 +12,7 @@ const SectionBackground = ({ imageUrl, children }) => {
       }}
     >
       {/* A lighter overlay to allow the animated background to show */}
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
+      <div className="absolute inset-0 bg-slate-950/55 backdrop-blur-[2px]"></div>
       <div className="relative z-10 w-full">
         {children}
       </div>
